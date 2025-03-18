@@ -1,0 +1,25 @@
+Name     LAB4PART3 ;
+PartNo   01 ;
+Date     22-11-2024 ;
+Revision 01 ;
+Designer LOKESH SENTHIL KUMAR ;
+Company  University of Colorado ;
+Assembly None ;
+Location  ;
+Device   g16v8a ;
+
+/* *************** INPUT PINS *********************/
+PIN  2   =  A15                       ; /*                                 */ 
+PIN  3   =  A14                       ; /*                                 */ 
+PIN  4   =  A13                       ; /*                                 */ 
+PIN  5   =  A12                       ; /*                                 */ 
+PIN  6   =  RD                       ; /*                                 */ 
+PIN  8   =  WR                       ; /*                                 */ 
+
+/* *************** OUTPUT PINS *********************/
+PIN  15   = LCD_ENABLE                        ; /*                                 */ 
+
+/* **** LOGIC *** */
+LCD_ENABLE = (!(RD & WR) & (A15&A14&A13&A12));
+
+
