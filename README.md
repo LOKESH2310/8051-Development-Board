@@ -64,4 +64,54 @@ This project demonstrates a full-cycle embedded system design around the **AT89C
 - Logic analyzer or oscilloscope (optional for debugging)
 - WinCUPL software (for PLD programming)
 
-### 2. Folder Structure
+---
+
+## 🧪 Testing & Validation
+
+- Verified UART baud rate and transmission integrity using PuTTY
+- Address decoding tested by writing data patterns to NVRAM and reading back
+- Used logic analyzer to observe ALE, RD̅, WR̅, and CS signals
+- Oscilloscope measurements for DAC waveform accuracy
+- Performed functional test cases on LCD, EEPROM, and memory-mapped I/O
+
+---
+
+## 🚀 Features
+
+- Fully in-system programmable (no chip removal needed)
+- Modular hardware layout for expansion
+- Hybrid firmware (Assembly + C)
+- Dynamic heap management simulated via EEPROM
+- Complete bare-metal peripheral control and debugging capability
+
+---
+
+## 📚 Learnings & Outcomes
+
+- Deep understanding of 8051 architecture and instruction set
+- Hands-on experience with address decoding and memory interfacing
+- Mastery of serial protocols, glue logic, and device driver design
+- Familiarity with embedded debugging tools and signal validation
+
+---
+
+## 👨‍🔬 Tools Used
+
+| Tool           | Purpose                              |
+|----------------|--------------------------------------|
+| SDCC           | Firmware compilation (C)             |
+| WinCUPL        | Glue logic programming (AT16V8C)     |
+| PuTTY          | Serial communication                 |
+| Logic Analyzer | Signal debugging                     |
+| Oscilloscope   | Analog output & timing verification  |
+| Altium/KiCad   | Schematic design                     |
+
+---
+
+## 🧠 Author
+
+**Lokesh Senthil Kumar**  
+Graduate Student – Embedded Systems  
+University of Colorado Boulder  
+
+
